@@ -1,0 +1,89 @@
+body{
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+ }
+ 
+ table{
+         background-color: white;
+         margin:auto;
+         width: 600px;
+ }
+ 
+ table tr td{
+         padding:10px;
+ }
+ 
+#header_box{
+     height: 5%;
+     text-align: center ;
+ }
+ 
+ 
+ #nav_box{
+        border-top:8px solid #997927;
+        background-color: #f1f1f1;
+        padding: 0px;
+        margin: 0px;
+        height: 39px;
+ }
+ 
+ #nav_box ul {
+         list-style: none;
+         padding: 0px;
+         margin:0px;
+ }
+ 
+ #nav_box li{
+         float: left;
+         color: black;
+ }
+ 
+ .active{
+         background: #997927;
+         color:white;
+ }
+ 
+ #nav_box a{
+         padding:10px;
+         text-decoration: none;
+ }
+ 
+ #nav_box a:hover:not(.active){  /** definifndo como vai ficar o index ativo no menu (não vai ficar azul quando passar o mouse em cima)**/ 
+         background-color:#997927;
+         color:white;
+         transition: 0.4s;
+ }
+ 
+ .article_box{
+         padding:10px;
+ }
+ 
+ .article_box p{
+         font-size:20px;
+         text-align: justify;
+ }
+ 
+ .article_box h2{
+         border-bottom:10px solid #997927;
+         text-align: center;
+ }
+ 
+ #image_box {
+         width: 200px;
+ }
+ 
+#titulo_livros {
+        text-align: center;
+}
+
+#welcome{
+        text-align: center;
+}
+ 
+ #footer_box{
+         text-align: center;
+         height: 50px;
+ }
