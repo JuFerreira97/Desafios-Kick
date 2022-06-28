@@ -1,0 +1,126 @@
+body{
+        background-color:rgb(239, 233, 178);
+        padding: 0px;
+        margin: 0px;
+}
+
+img{
+        width:100%;
+}
+
+
+#main{
+        margin: auto;
+        font-size: 20px;
+        width:50%;
+        text-align: justify;
+        background-color: white;
+
+}
+
+.navbar{
+        overflow: hidden;
+        background-color:rgba(114, 90, 10, 0.863);
+}
+
+.navbar a{
+        float:left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+.dropdown{
+        float:left;
+        overflow:hidden;
+}
+
+.dropdown .dropbtn{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color:white;
+        padding: 14px 16px;
+        background-color: inherit;
+        margin: 0;
+        
+}
+
+.dropdown-content{
+        display:none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow:  0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+        background-color: rgba(114, 90, 10, 0.863);
+}
+
+.dropdown-content a {
+        float:none;
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none ;
+        display: block;
+        text-align: left;
+}
+
+.dropdown-content a:hover{
+        background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+        display: block;
+}
+
+
+
+.article{
+        font-size:20px;
+        text-align: justify;
+}
+
+.article h2{
+       
+        text-align: center;
+}
+
+#footer{
+        text-align: center;
+        border-top: 1px solid black;
+}
+
+@media screen and (max-width: 1450px) {
+        #main{
+                width:80%;
+                font-size: 16px;
+        }
+        
+}
+
+@media screen and (max-width: 768px) {
+        body{
+                margin:0px;
+                padding: 0px;
+                
+
+        }
+
+        #main{
+                margin:0px;
+                padding:0px;
+                width: 100%;
+                font-size: 14px;
+        }
+
+
+        #content{
+                display: block;
+        }
+}
