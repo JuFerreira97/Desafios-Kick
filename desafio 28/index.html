@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="img/Logo simply.png"> 
+        <title>Quem somos</title>
+</head>
+<body class="bg">
+        <div class="container">
+                <div class="header">
+
+                        <div id="logo">
+                                <img src="img/logo_simply.png"width="200px" href="index.html">
+                                <img src="img/insta_head.png" width="40px" id="md">
+                                <img src="img/whats_head.png" width="40px" id="md">
+                                <img src="img/gmail_head.png" width="40px" id="md">
+                                
+                        </div>
+
+                        <div id="navbar">
+                                <a href="index.html" class="active">Quem somos</a>
+                                <a href="potifolio.html">Portifólio</a>
+                                <a href="blog.html" >Blog</a>
+                        </div>
+                </div>
+
+                <div class="carrossel-container">
+
+                        <div class="slides fade">
+
+                                <img src="img/pag1_banner.png" >
+
+                        </div>
+
+                        <div class="slides fade">
+
+                                <img src="img/Captura de tela 2022-07-26 170611.png" >
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                
+
+                <br>
+
+
+        <script>
+                let slideIndex = 1;
+                mostraSlides(slideIndex);
+
+
+                function plusSlides(n){
+                        mostraSlides(slideIndex += n)
+
+                }
+
+                function slideAtual(n){
+                        mostraSlides(slideIndex += n)
+                }
+
+                function mostraSlides(n){
+                        let i;
+                        let slides = document.getElementsByClassName("slides");
+
+
+                        if(n > slides.length){
+                                slideIndex = 1;
+                        }
+
+                        if(n < 1){
+                                slideIndex = slides.length;
+                        }
+
+                        for(i=0; i < slides.length; i++){
+                                slides[i].style.display = "none";
+                        }
+
+                        slides[slideIndex-1].style.display = "block";
+                      
+
+
+                }
+
+        </script>
+        
+       
+</div>
+</body>
+</html>
